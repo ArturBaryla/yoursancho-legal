@@ -66,6 +66,7 @@
     <tr><td>Invitations</td><td>Who invited whom to which group; invite links and who created them</td><td>From the person inviting</td></tr>
     <tr><td>Purchases and tokens</td><td>Plan and its status, purchase and renewal dates, extra token packs, amount and currency, the country of the store account, the store’s purchase ID, store events (purchase, renewal, refund) as RevenueCat sent them, token balance, expiry and use. No card number or other payment details</td><td>From Google Play or the App Store (through RevenueCat); the balance — from our server</td></tr>
     <tr><td>Purchase consent</td><td>Which product (a token pack or a subscription), which version of the text you saw and in which language, when you agreed and — after the purchase — the store’s ID of the payment the consent belongs to</td><td>From you, in the window before the purchase</td></tr>
+    <tr><td>Consent to read receipts</td><td>Which version of the text you saw, in which language, exactly how it read and when you agreed; if you withdraw the consent — also when you did</td><td>From you, in the window before the first scan</td></tr>
     <tr><td>E-mails from us</td><td>The text of the messages: purchase confirmation (what you bought, the price, your consent, the seller’s details), subscription renewal, refund, auto-renewal being switched off, the welcome after you create an account, the confirmation that an account was deleted, and the notice after an account is blocked; the time of sending, the provider’s ID of the message. We keep the recipient’s address only until the message is sent</td><td>From us — on the basis of your purchase, your creating an account or our decision</td></tr>
     <tr><td>Push notifications</td><td>Device token, platform, app language and version, notification settings, muted groups</td><td>From your phone, when its system allows the app to send notifications; settings — from you</td></tr>
     <tr><td>Reports and moderation</td><td>Reports (who, what, reason, description, copy of the content or photo), blocks, <strong>decisions taken automatically</strong> (model, confidence and the model’s note in the moderation log), warnings, decisions on reports and messages — sent automatically, with confirmation of reading, kept in the inbox in the App — suspensions (reason, statement of reasons, period)</td><td>From the person reporting or blocking; warnings, decisions and suspensions — from the automated assessment of the report, and on appeal — from the administrator</td></tr>
@@ -98,7 +99,7 @@
 
 <p class="pt" id="p4-5"><span class="no">4.5.</span> <strong>Photos</strong> have no permanent public address. The app downloads them through a link valid for 1 hour; during that time anyone who has the link can download the photo without signing in. Do not pass such links on.</p>
 
-<p class="pt" id="p4-6"><span class="no">4.6.</span> <strong>Before you upload a photo, think about what else is in it.</strong> All members of the group see a receipt photo, including those who join later. Do not photograph it together with documents, cards or account numbers. A receipt may also reveal information about health (e.g. medicines from a pharmacy) or other very personal matters. Do not scan such receipts or add their photos if you do not want the group members to see them and the scanning provider to receive them.</p>
+<p class="pt" id="p4-6"><span class="no">4.6.</span> <strong>Before you upload a photo, think about what else is in it.</strong> All members of the group see a receipt photo, including those who join later. Do not photograph it together with documents, cards or account numbers. A receipt may also reveal information about health (e.g. medicines from a pharmacy) or other very personal matters. Do not scan such receipts or add their photos if you do not want the group members to see them and the scanning provider to receive them. Before you scan your first receipt, the app asks for your explicit consent to the photo being processed even when such data is on it (point 6.7).</p>
 
 <p class="pt" id="p4-7"><span class="no">4.7.</span> <strong>Reports, blocks and the change log:</strong> only the app administrator and the system that assesses reports (point 5.5) see a report, and the author is not told who reported — the system does not receive the reporter’s details; only you see your blocks; only the administrator and that system read the change log, to find out who changed a reported item.</p>
 
@@ -131,7 +132,7 @@
 
 <p class="pt" id="p5-3"><span class="no">5.3.</span> <strong>Google Play and the Apple App Store</strong> process payments as <strong>independent controllers</strong> — on their own terms and under their own privacy policies. We receive from them (through RevenueCat) only information about the purchase. Likewise, <strong>Apple, when you sign in with Apple</strong>, acts as the independent controller of your Apple account; it passes us only your name and e-mail address (or a relay address).</p>
 
-<p class="pt" id="p5-4"><span class="no">5.4.</span> <strong>Scanning sends the receipt photo to Anthropic.</strong> If you do not want it to leave our server, do not use scanning and enter the items by hand.</p>
+<p class="pt" id="p5-4"><span class="no">5.4.</span> <strong>Scanning sends the receipt photo to Anthropic</strong> — only after your consent, which we ask for before the first scan (point 6.7). If you do not want the photo to leave our server, do not use scanning and enter the items by hand.</p>
 
 <p class="pt" id="p5-5"><span class="no">5.5.</span> <strong>Assessing reports sends the reported content to Anthropic.</strong> When somebody reports content, a system based on artificial intelligence (the Claude model) assesses the report: it receives the reported text and — for a photo — a copy of it, the reason and description from the reporter, without the reporter’s name or account, and, about the people who may be the author: their role, how many times they changed the reported item and how many earlier warnings and suspensions they had — without names or identifiers. If somebody reports your content, this assessment takes place without your consent (basis: point 6.2); you can challenge the decision (point 10.6).</p>
 
@@ -163,6 +164,8 @@
 
 <p class="pt" id="p6-6"><span class="no">6.6.</span> <strong>Apart from assessing reports (point 10.6), we make no decisions based solely on automated processing</strong> that have legal effects on you or similarly significantly affect you (Art. 22 GDPR). The model reading a receipt only fills in fields that you can always correct.</p>
 
+<p class="pt" id="p6-7"><span class="no">6.7.</span> <strong>Consent (Art. 6(1)(a) and Art. 9(2)(a) GDPR).</strong> Scanning a receipt needs your explicit consent, which you give in the window before the first scan by tapping “I agree and scan”. The AI model of the provider (Anthropic) then reads the receipt photo even when the receipt shows health data, e.g. medicines from a pharmacy — we do not look for such data and do not analyse it. We record which version of the text you saw, in which language, exactly how it read and when you agreed (point 2). The consent is voluntary: without it you cannot use scanning, but you can use the rest of the app, and you can add the expense by hand. You can withdraw it at any time in Profile, under Privacy &amp; Security; at the next scan we ask again. Withdrawing does not affect the lawfulness of processing before it and does not remove photos or items already added to expenses — you remove them in the expense. We keep the record of the consent until the account is deleted (point 7).</p>
+
 <h2 id="7-how-long-we-keep-data">7. How long we keep data</h2>
 
 <div class="table-wrap">
@@ -177,6 +180,7 @@
     <tr><td>Invitations</td><td>Accepted and declined — deleted at once; unanswered — 90 days; invite links — 30 days after they expire or are revoked</td></tr>
     <tr><td>Purchases and tokens</td><td>6 years from the end of the year of purchase (token pools that can still be used, longer); after account deletion — under an ID that carries no data, together with the store’s purchase ID</td></tr>
     <tr><td>Purchase consent</td><td>Like the purchase data: 6 years from the end of the year of purchase; a consent that no purchase followed — 30 days</td></tr>
+    <tr><td>Consent to read receipts</td><td>Until the account is deleted</td></tr>
     <tr><td>E-mails from us</td><td>Purchase confirmations, renewals and refunds — like the purchase data (6 years from the end of the year of purchase); notices after an account is blocked — 2 years; the welcome, the notice that auto-renewal was switched off and the confirmation of account deletion — 90 days; we delete the recipient’s address once the message is sent</td></tr>
     <tr><td>Device token</td><td>Until you sign out, turn notifications off in the phone or delete the account; also when the notification provider reports it invalid</td></tr>
     <tr><td>Notification settings, muted groups</td><td>Until the account is deleted</td></tr>
@@ -225,7 +229,7 @@
   <li>have your data erased,</li>
   <li>restrict processing,</li>
   <li>data portability,</li>
-  <li>withdraw consent, where processing is based on it — at any time, without affecting the lawfulness of processing before the withdrawal.</li>
+  <li>withdraw consent, where processing is based on it (you withdraw the consent to read receipts in Profile, under Privacy &amp; Security) — at any time, without affecting the lawfulness of processing before the withdrawal.</li>
 </ol>
 
 <p class="pt" id="p10-2"><span class="no">10.2.</span> <strong>Right to object.</strong> You may at any time object — on grounds relating to your particular situation — to the processing of your data based on our legitimate interests (point 6.4). We will then stop processing it unless we show compelling legitimate grounds that override your interests, rights and freedoms, or grounds for establishing, exercising or defending legal claims.</p>

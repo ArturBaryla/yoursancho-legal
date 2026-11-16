@@ -66,6 +66,7 @@
     <tr><td>Zaproszenia</td><td>Kto kogo zaprosił do której grupy; linki zaproszeń i kto je utworzył</td><td>Od zapraszającego</td></tr>
     <tr><td>Zakupy i tokeny</td><td>Plan i status, daty zakupu i odnowień, dokupienia, kwota i waluta, kraj konta w sklepie, identyfikator zakupu w sklepie, zdarzenia ze sklepu (zakup, odnowienie, zwrot) zapisane tak, jak przysłał je RevenueCat, saldo tokenów, ważność i zużycie. Bez numeru karty i innych danych płatniczych</td><td>Ze sklepu Google Play albo App Store (przez RevenueCat); saldo — z naszego serwera</td></tr>
     <tr><td>Zgoda na zakup</td><td>Który produkt (pakiet tokenów albo abonament), którą wersję tekstu widziałeś i w jakim języku, kiedy się zgodziłeś oraz — po zakupie — identyfikator płatności w sklepie, do której zgoda się odnosi</td><td>Od Ciebie, w oknie przed zakupem</td></tr>
+    <tr><td>Zgoda na odczyt paragonów</td><td>Którą wersję tekstu widziałeś, w jakim języku, jak dokładnie brzmiał i kiedy się zgodziłeś; jeśli wycofasz zgodę — także kiedy to zrobiłeś</td><td>Od Ciebie, w oknie przed pierwszym skanem</td></tr>
     <tr><td>Wiadomości e-mail od nas</td><td>Treść wiadomości: potwierdzenia zakupu (co kupiłeś, cena, Twoja zgoda, dane sprzedawcy), odnowienia abonamentu, zwrotu płatności, wyłączenia odnawiania abonamentu, powitania po założeniu konta, potwierdzenia usunięcia konta i informacji po zablokowaniu konta; czas wysłania, identyfikator wiadomości u dostawcy. Adres odbiorcy trzymamy tylko do chwili wysłania</td><td>Od nas — na podstawie Twojego zakupu, założenia konta albo naszej decyzji</td></tr>
     <tr><td>Powiadomienia push</td><td>Token urządzenia, platforma, język i wersja aplikacji, ustawienia powiadomień, wyciszone grupy</td><td>Z telefonu, gdy jego system pozwala aplikacji na powiadomienia; ustawienia — od Ciebie</td></tr>
     <tr><td>Zgłoszenia i moderacja</td><td>Zgłoszenia (kto, co, powód, opis, kopia treści lub zdjęcia), blokady, <strong>decyzje podjęte automatycznie</strong> (model, pewność i notatka modelu w dzienniku moderacji), ostrzeżenia, decyzje w sprawie zgłoszeń i komunikaty — wysyłane automatycznie, z potwierdzeniem przeczytania, zostają w skrzynce w Aplikacji — zawieszenia (powód, uzasadnienie, okres)</td><td>Od zgłaszającego lub blokującego; ostrzeżenia, decyzje i zawieszenia — z automatycznej oceny zgłoszenia, a przy odwołaniu — od administratora</td></tr>
@@ -98,7 +99,7 @@
 
 <p class="pt" id="p4-5"><span class="no">4.5.</span> <strong>Zdjęcia</strong> nie mają stałego, publicznego adresu. Aplikacja pobiera je przez link ważny 1 godzinę; w tym czasie każdy, kto go ma, może pobrać zdjęcie bez logowania. Nie przekazuj takich linków dalej.</p>
 
-<p class="pt" id="p4-6"><span class="no">4.6.</span> <strong>Zanim wgrasz zdjęcie, pomyśl, co jeszcze na nim widać.</strong> Zdjęcie paragonu widzą wszyscy uczestnicy grupy, także ci, którzy dołączą później. Nie fotografuj go razem z dokumentami, kartami czy numerami rachunków. Paragon może też zdradzać informacje o zdrowiu (np. leki z apteki) albo inne bardzo osobiste sprawy. Takich paragonów nie skanuj i nie dodawaj ich zdjęć, jeśli nie chcesz, żeby zobaczyli je uczestnicy grupy i żeby trafiły do dostawcy skanowania.</p>
+<p class="pt" id="p4-6"><span class="no">4.6.</span> <strong>Zanim wgrasz zdjęcie, pomyśl, co jeszcze na nim widać.</strong> Zdjęcie paragonu widzą wszyscy uczestnicy grupy, także ci, którzy dołączą później. Nie fotografuj go razem z dokumentami, kartami czy numerami rachunków. Paragon może też zdradzać informacje o zdrowiu (np. leki z apteki) albo inne bardzo osobiste sprawy. Takich paragonów nie skanuj i nie dodawaj ich zdjęć, jeśli nie chcesz, żeby zobaczyli je uczestnicy grupy i żeby trafiły do dostawcy skanowania. Zanim zeskanujesz pierwszy paragon, aplikacja prosi o Twoją wyraźną zgodę na przetworzenie zdjęcia także wtedy, gdy takie dane na nim są (punkt 6.7).</p>
 
 <p class="pt" id="p4-7"><span class="no">4.7.</span> <strong>Zgłoszenia, blokady i dziennik zmian:</strong> zgłoszenie widzi wyłącznie administrator aplikacji oraz system oceniający zgłoszenia (punkt 5.5), a autor nie dowiaduje się, kto zgłosił — system nie dostaje danych zgłaszającego; blokadę widzisz tylko Ty; dziennik zmian czytają wyłącznie administrator i ten system, żeby ustalić, kto zmienił zgłoszoną rzecz.</p>
 
@@ -131,7 +132,7 @@
 
 <p class="pt" id="p5-3"><span class="no">5.3.</span> <strong>Google Play i Apple App Store</strong> przeprowadzają płatność jako <strong>niezależni administratorzy</strong> — na swoich warunkach i według własnych polityk prywatności. Dostajemy od nich (przez RevenueCat) tylko informację o zakupie. Tak samo <strong>Apple przy logowaniu przez Apple</strong> działa jako niezależny administrator Twojego konta Apple; przekazuje nam tylko imię i adres e-mail (albo adres przekaźnikowy).</p>
 
-<p class="pt" id="p5-4"><span class="no">5.4.</span> <strong>Skanowanie wysyła zdjęcie paragonu do Anthropic.</strong> Jeśli nie chcesz, żeby opuściło nasz serwer, nie używaj skanowania i wpisz pozycje ręcznie.</p>
+<p class="pt" id="p5-4"><span class="no">5.4.</span> <strong>Skanowanie wysyła zdjęcie paragonu do Anthropic</strong> — dopiero po Twojej zgodzie, o którą pytamy przed pierwszym skanem (punkt 6.7). Jeśli nie chcesz, żeby zdjęcie opuściło nasz serwer, nie używaj skanowania i wpisz pozycje ręcznie.</p>
 
 <p class="pt" id="p5-5"><span class="no">5.5.</span> <strong>Ocena zgłoszeń wysyła zgłoszoną treść do Anthropic.</strong> Gdy ktoś zgłosi treść, system oparty na sztucznej inteligencji (model Claude) ocenia zgłoszenie: dostaje zgłoszony tekst i — przy zdjęciu — jego kopię, powód i opis od zgłaszającego, bez imienia i konta zgłaszającego, oraz o osobach, które mogły być autorem: rolę, ile razy zmieniały zgłoszoną rzecz i ile miały wcześniej ostrzeżeń i zawieszeń — bez imion i bez identyfikatorów. Jeśli ktoś zgłosi Twoją treść, ta ocena następuje bez Twojej zgody (podstawa: punkt 6.2); decyzję możesz zakwestionować (punkt 10.6).</p>
 
@@ -163,6 +164,8 @@
 
 <p class="pt" id="p6-6"><span class="no">6.6.</span> <strong>Poza oceną zgłoszeń (punkt 10.6) nie podejmujemy decyzji opartych wyłącznie na zautomatyzowanym przetwarzaniu</strong>, które wywoływałyby wobec Ciebie skutki prawne lub w podobny sposób istotnie na Ciebie wpływały (art. 22 RODO). Odczyt paragonu przez model tylko wypełnia pola, które zawsze możesz poprawić.</p>
 
+<p class="pt" id="p6-7"><span class="no">6.7.</span> <strong>Zgoda (art. 6 ust. 1 lit. a i art. 9 ust. 2 lit. a RODO).</strong> Skanowanie paragonu wymaga Twojej wyraźnej zgody, którą wyrażasz w oknie przed pierwszym skanem, naciskając „Zgadzam się i skanuj”. Zdjęcie paragonu czyta wtedy model AI dostawcy (Anthropic) także wtedy, gdy na paragonie są dane o zdrowiu, np. leki z apteki — nie szukamy ich i nie analizujemy. Zapisujemy, którą wersję tekstu widziałeś, w jakim języku, jak dokładnie brzmiał i kiedy się zgodziłeś (punkt 2). Zgoda jest dobrowolna: bez niej nie skorzystasz ze skanowania, ale z reszty aplikacji — tak, a wydatek możesz dodać ręcznie. Możesz ją wycofać w każdej chwili w Profilu, w sekcji Prywatność i bezpieczeństwo; przy następnym skanie zapytamy ponownie. Wycofanie nie wpływa na zgodność z prawem przetwarzania przed jego dokonaniem i nie usuwa zdjęć ani pozycji, które już zostały dodane do wydatków — usuniesz je w wydatku. Zapis zgody przechowujemy do usunięcia konta (punkt 7).</p>
+
 <h2 id="7-jak-długo-przechowujemy-dane">7. Jak długo przechowujemy dane</h2>
 
 <div class="table-wrap">
@@ -177,6 +180,7 @@
     <tr><td>Zaproszenia</td><td>Przyjęte i odrzucone — usuwamy od razu; bez odpowiedzi — 90 dni; linki — 30 dni po wygaśnięciu lub cofnięciu</td></tr>
     <tr><td>Zakupy i tokeny</td><td>6 lat od końca roku zakupu (pule tokenów, które można jeszcze wykorzystać, dłużej); po usunięciu konta — przy identyfikatorze bez danych, wraz z identyfikatorem zakupu w sklepie</td></tr>
     <tr><td>Zgoda na zakup</td><td>Jak dane o zakupach: 6 lat od końca roku zakupu; zgoda, po której nic nie kupiono — 30 dni</td></tr>
+    <tr><td>Zgoda na odczyt paragonów</td><td>Do usunięcia konta</td></tr>
     <tr><td>Wiadomości e-mail od nas</td><td>Potwierdzenia zakupów, odnowień i zwrotów — jak dane o zakupach (6 lat od końca roku zakupu); informacje po zablokowaniu konta — 2 lata; powitanie, informacja o wyłączeniu odnawiania i potwierdzenie usunięcia konta — 90 dni; adres odbiorcy usuwamy po wysłaniu wiadomości</td></tr>
     <tr><td>Token urządzenia</td><td>Do wylogowania, wyłączenia powiadomień w telefonie albo usunięcia konta; także gdy dostawca powiadomień uzna go za nieważny</td></tr>
     <tr><td>Ustawienia powiadomień, wyciszone grupy</td><td>Do usunięcia konta</td></tr>
@@ -225,7 +229,7 @@
   <li>usunięcia danych,</li>
   <li>ograniczenia przetwarzania,</li>
   <li>przenoszenia danych,</li>
-  <li>cofnięcia zgody, jeśli przetwarzanie się na niej opiera — w każdej chwili, bez wpływu na zgodność z prawem przetwarzania przed jej cofnięciem.</li>
+  <li>cofnięcia zgody, jeśli przetwarzanie się na niej opiera (zgodę na odczyt paragonów cofasz w Profilu, w sekcji Prywatność i bezpieczeństwo) — w każdej chwili, bez wpływu na zgodność z prawem przetwarzania przed jej cofnięciem.</li>
 </ol>
 
 <p class="pt" id="p10-2"><span class="no">10.2.</span> <strong>Prawo sprzeciwu.</strong> W każdej chwili możesz wnieść sprzeciw — z przyczyn związanych z Twoją szczególną sytuacją — wobec przetwarzania Twoich danych na podstawie naszego prawnie uzasadnionego interesu (punkt 6.4). Przestaniemy je wtedy przetwarzać, chyba że wykażemy ważne, prawnie uzasadnione podstawy nadrzędne wobec Twoich interesów, praw i wolności albo podstawy do ustalenia, dochodzenia lub obrony roszczeń.</p>
